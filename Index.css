@@ -1,0 +1,785 @@
+
+
+.starbucksLogo{
+    height: 40px;
+    width: 40px;
+    margin: 1rem 0 0 6rem;
+}
+body{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar{
+    height: 50px;
+    width: 100%;
+    padding: 45px;
+    background-color:#ffffff;
+    align-items:center;
+    position: fixed;
+    top: 0;
+    display: flex;
+    z-index: 1000;
+ margin:0 0 0 0;   
+}
+.center-nav{
+    height: 2rem;
+    flex:8;
+   
+}
+.right-nav{
+    height: 50px;
+    width: 100px;
+    flex:3;
+    margin: 4rem 10rem 3rem 10rem;
+    display: flex;
+    justify-items: flex-end;
+    
+}
+.center-list{
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.center-nav-list{
+  
+    margin: 0 0.7rem;
+}
+.center-nav-list>a{
+    text-decoration: none;
+    width: 1.7rem;
+    color: #060606;
+    padding: 7px 8px;
+    font-family: 'SoDo Sans SemiBold',sans-serif ;
+    font-weight: var(font-weight);
+    font-size: 1rem;
+    font-stretch: expanded;
+    letter-spacing: 1px;
+    
+}
+.hover-text {
+    color: #00754a;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color change */
+  }
+
+  /* Hover effect */
+  .hover-text:hover {
+    color: #00754a;          /* Change text color to red on hover */
+    
+    text-decoration: none; 
+  }
+  .hover-text::selection{
+        font-weight: bold;
+        border-bottom: 3px;
+         padding-bottom: 10px;
+  }
+
+/* Font Awesome for search icon */
+
+
+.search-container {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  margin: 2rex 0 0 4rem;
+}
+
+.search-bar {
+  width: 500px;
+  height: 35px;
+  border-radius: 20px; /* Pill shape */
+  border: 1px solid #ccc;
+  padding-left: 30px; 
+  padding-right: 50px;/* Space for the icon */
+  font-family: 'SoDo Sans Light',sans-serif ;/* Enable icon font */
+  font-weight: 100; /* Normal weight for icons */
+  font-size: 12px;
+  background-color: #f9f9f9;
+  color: #333;
+  outline: none;
+  align-items:flex-end;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Adjust the placeholder style */
+.search-bar::placeholder {
+  color: #8d8b8b;
+  position: fixed;
+}
+
+/* Add a logo icon inside the input field */
+.search-container::before {
+     /* Unicode for Font Awesome search icon */
+    font-family: 'SoDo Sans Light',sans-serif; 
+    font-weight: 100; /* Bold weight for icons */
+    position: absolute;
+    color: #aaa;
+    margin-left: 10px;
+    font-size: 12px;
+  }
+.search-container {
+    position: relative;
+    width:90px;
+    left:1px;
+    right: 200px;
+  }
+  
+  .search-container::before {
+    content: '';
+    background: url('search-555.png') no-repeat left;
+    background-size: 15px 15px;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    right: 4px;
+    width: 50px;
+    height: 18px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .green-box{
+    background-color: #0c4531;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width :100%;
+    padding-left: 50px;
+    padding-right:100px;
+    
+    padding: 15px;
+    position: relative;
+    top: 90px;
+    width: 100%;
+    vertical-align: middle;
+    cursor: pointer;
+    align-items:center;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0 0;
+  }
+  .starbuks{
+    text-decoration: none;
+    text-align: right;
+    width: 1.7rem;
+    color: #fbf7f7;
+    padding: 7px 8px;
+    position: relative;
+    left: 1px;
+    font-family: 'SoDo Sans thin',sans-serif ;
+    font-weight: 1;
+    font-size: 1.2rem;
+    font-stretch: expanded;
+    letter-spacing: 1px;
+    margin: 0 0rem 0rem 0rem;
+    
+  }
+
+  .know-more{
+    display: flex;
+    justify-content: flex-start;
+      padding: 8px 10px; /* Add padding to increase the button's size */
+      background-color: #0c4531; /* Green background color */
+      color: #ffffff; /* White text color */
+      border-color: #f2e7e7;/* Remove default border */
+      border-radius: 40px; /* Make the button pill-shaped */
+      font-size: 13px; /* Font size for the text */
+      cursor: pointer; /* Change cursor to pointer on hover */
+      align-items:center;
+      display: flex;
+      justify-content: center;
+     
+      margin-left: 60%;
+
+  }
+  .handcrafted-head{
+    padding: 5px;
+    position: relative;
+    top: 110px;
+    left: 120px;
+    font-family: 'SoDo Sans SemiBold',sans-serif ;
+    font-weight: 1000;
+    font-size: 12px;
+  }
+  
+.handcrafted-curations{
+  display: flex; /* Arrange items horizontally */
+  justify-content: center; /* Center items horizontally */
+  gap: 56px; /* Space between images */
+  padding: 20px;
+  position: relative;
+  top :120px;
+}
+
+.hand-list{
+ 
+width: 100px; /* Set the width of the circular border */
+height: 100px; /* Set the height of the circular border */
+  
+  border: 2px solid #f8faf8; /* Circular border color */
+border-radius: 100%; /* Make the border circular */
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden; 
+cursor: pointer;
+position: relative;
+top: .8px;
+
+}
+
+.hand-list image{
+width: 100%; /* Ensure the image fills the container */
+height: 100%; /* Ensure the image fills the container */
+object-fit: cover;
+transition: transform 0.2s ease, filter 0.2s ease;
+}
+.hand-list:hover{
+  width: 100px;
+  border-color: #0c4531;
+  border-width: 2px;
+  transform: translate(.5px, .5px); /* Light movement effect */
+  filter: brightness(1.1); /* Slightly brightens the image */
+}
+.handlist-items{
+  display: flex; /* Arrange items horizontally */
+  justify-content: center; /* Center items horizontally */
+  gap: 90px; /* Space between images */
+  padding: 10px;
+  position: relative;
+  top :100px;
+}
+.list-items1{
+  align-items: center;
+justify-content: center;
+font-family: 'SoDo Sans SemiBold',sans-serif ;
+font-size: 15px;
+padding: 5px;
+position: relative;
+left: 30px;
+}
+.list-items2{
+  align-items: center;
+  text-align: center;
+justify-content: center;
+font-family: 'SoDo Sans SemiBold',sans-serif ;
+font-size: 15px;
+padding: 5px;
+position:relative;
+left: 30px;
+}
+.list-items3{
+  align-items: center;
+  text-align: center;
+  line-height: 20px;
+justify-content: center;
+font-family: 'SoDo Sans SemiBold',sans-serif ;
+font-size: 15px;
+padding: 5px;
+position:relative;
+left: 50px;
+}
+.list-items4{
+  align-items: center;
+  text-align: center;
+  line-height: 20px;
+justify-content: center;
+font-family: 'SoDo Sans SemiBold',sans-serif ;
+font-size: 15px;
+padding: 5px;
+position:relative;
+left: 50px;
+}
+.list-items5{
+  align-items: center;
+  text-align: center;
+  line-height: 20px;
+justify-content: center;
+font-family: 'SoDo Sans SemiBold',sans-serif ;
+font-size: 15px;
+padding: 5px;
+position:relative;
+left: 20px;
+}
+.list-items6{
+  align-items: center;
+  text-align: center;
+  line-height: 20px;
+justify-content: center;
+font-family: 'SoDo Sans SemiBold',sans-serif ;
+font-size: 15px;
+padding: 5px;
+position:relative;
+right: 10px;
+}
+
+
+.barista-outer{
+  padding: 80px;
+  background-color:#edebe9;
+  position: relative;
+  top:150px;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.barista{
+  display: flex; /* Arrange items horizontally */
+  gap: 400px; 
+  padding: 1px;
+  position: relative;
+  top:-50px;
+  height: 1px;
+  margin: 0 0 0 0;
+    }
+
+    .barista-head{
+font-family: 'SoDo Sans SemiBold',sans-serif ;
+font-size: 25px;
+font-weight: 700;
+letter-spacing: 1px;
+padding: 5px;
+position:relative;
+top:0;
+left: 5px;
+    }
+    .viewmenu{
+      font-family: 'SoDo Sans SemiBold',sans-serif ;
+      font-size: small;
+      font-weight: 500;
+      color: #00754a;
+padding: 5px;
+position:relative;
+cursor: pointer;
+    }
+
+
+.barista-inner{ 
+display: flex;
+gap: 30px;
+
+}
+
+    .barista-inner1{
+      position: relative;
+      top:0;
+      padding: 25px;
+      width: 300px;
+      height: 170px;
+      text-align: left;
+     font-size: 15px;
+     font-weight: 700;
+     background-color: #ffffff;
+     color: rgb(21, 20, 20);
+     border-radius: 10px;
+     align-items: center;
+     justify-content: center;
+     
+    }
+    .button{
+      display: flex;
+          padding: 8px 15px; /* Add padding to increase the button's size */
+      background-color: #00754a; /* Green background color */
+      color: #ffffff; /* White text color */
+      border:none;
+      outline: none;
+      border-radius: 20px; /* Make the button pill-shaped */
+      font-size: 13px; /* Font size for the text */
+      font-weight: 700;
+      cursor: pointer; /* Change cursor to pointer on hover */
+      align-items:center;
+      display: flex;
+      justify-content: center;
+      
+      position: relative;
+      top: -19px;
+      left:110px
+    }
+    .button:hover{
+      color:#f5f7f6 ;
+     background-color: #0c4531;
+    }
+    .left-arrow{
+      width: 200px;
+      height: 40px;
+      background-color:#f5f7f6;
+      color:#00754a;
+      font-size: 22px;
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position:relative;
+      top: 60px;
+      left:40px;
+     
+    }
+    .right-arrow{
+      width: 200px;
+      height: 40px;
+      background-color:#f5f7f6;
+      color:#00754a;
+      font-size: 22px;
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position:relative;
+      top: 60px;
+      
+      right:40px;
+    }
+    .learnmore-outer{
+      padding: 20px;
+      background-color:#edebe9;
+      position: relative;
+      top:200px;
+      left: 0;
+      right: 0;
+      bottom:-80px;
+      width: 100%;
+      height:500px;
+      cursor: pointer;
+      margin-bottom: 50px;
+    }
+    
+    .learnmore{
+      display: flex; /* Arrange items horizontally */
+      gap: 300px; 
+      padding: 1px;
+      position: relative;
+      top:1px;
+      height: 1px;
+      margin: 0 0 0 0;
+        }
+    
+    .learnmore-headding{
+      font-family: 'SoDo Sans SemiBold',sans-serif ;
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 5px;
+      position:relative;
+      top:-5px;
+      left: 5px;
+          }
+          .discovermore{
+            font-family: 'SoDo Sans SemiBold',sans-serif ;
+            font-size: small;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #00754a;
+      padding: 5px;
+      position:relative;
+      cursor: pointer;
+          }
+      .learnmore-image{
+        padding: 80px;
+        position:relative;
+        top:-1px;
+        left: -60px;
+       border-radius: 10px;
+        height: 550px;
+        width: 1000px;
+        transition: filter 0.9s ease;
+        background-size: cover; /* Ensure the image covers the container */
+        background-position: center;
+        
+      }
+      .learnmore-image :hover{
+        filter: brightness(50%);
+      }
+      .coffeeMakingImage{
+        position: relative;
+        border-radius: 10px;
+        height: 350px;
+        width:1000px;
+        transition: filter 0.9s ease;
+      }
+      .coffeeMakingImag :hover{
+        filter: brightness(50%);
+      }
+
+      .coffeCulture{
+      position: relative;
+      top: -320px;
+      left:20px;
+      border:none;
+      outline: none;
+      font-size: 10px;
+      font-weight: 900px;
+      letter-spacing: 1px;
+      color: #00754a;
+      width:100px;
+      height:20px;
+      border-radius:5px;
+      box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3); 
+      }
+      .learnmore-image p{
+       position: relative;
+       top: -180px;
+       left:20px;
+       font-family: 'SoDo Sans thin',sans-serif;
+       font-size: small;
+       font-weight: 900;
+       letter-spacing: 1px;
+       color: #f4f8f7;
+      }
+      .learnmore-image h1{
+        position: relative;
+        top: -200px;
+        left:20px;
+        background-color: none;
+        font-family: 'SoDo Sans SemiBold',sans-serif ;
+        font-size: x-large;
+        font-weight: 900;
+        letter-spacing: 1px;
+        color: #f4f8f7;
+       }
+      .learnmore-button{
+      position:relative;
+      top:-140px;
+      left:30px;
+      background-color: #fcfefd; /* Green background color */
+      color: #090909; /* White text color */
+      border:none;
+      outline: none;
+      border-radius: 20px; /* Make the button pill-shaped */
+      font-family: 'SoDo Sans SemiBold',sans-serif ;
+      font-size: 13px; /* Font size for the text */
+      font-weight: 700;
+      letter-spacing: 1px;
+      cursor: pointer; /* Change cursor to pointer on hover */
+      align-items:center;
+      width:190px;
+      height: 30px;
+      box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+      }
+
+
+
+
+      .footer{
+        padding: 80px;
+        background-color: #0e382c;
+        position: relative;
+        top:200px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        color: #f5f7f6;
+        height: auto;
+      }
+      .aboutUs{
+        width:200px;
+        margin: 20px auto;
+        text-align: left;
+        color: #f5f7f6;
+        position: relative;
+        top:-80px;
+        left :-280px;
+        cursor: pointer;
+      }
+      .aboutUs h3{
+        display: block;
+        color: #f5f7f6;
+        font-size: 20px;
+        font-family: 'SoDo Sans SemiBold',sans-serif ;
+        letter-spacing: 1px;
+        text-decoration: none;
+        margin-bottom: 10px;
+      }
+      .aboutUs a{
+        display: block;
+        color: #f5f7f6;
+        font-size: 14px;
+        font-family: 'SoDo Sans SemiBold',sans-serif ;
+        letter-spacing: 1px;
+        text-decoration: none;
+        margin-bottom: 10px;
+        transition: color 0.3s ease;
+      }
+      .aboutUs a:hover{
+        color: #8d8b8b;
+      }
+      .Resposibility{
+        width:200px;
+        margin: 20px auto;
+        text-align: left;
+        color: #f5f7f6;
+        position: relative;
+        top:-205px;
+        left :-150px;
+        cursor: pointer;
+      }
+      .Resposibility a{
+
+        display: block;
+        color: #f5f7f6;
+        font-size: 14px;
+        font-family: 'SoDo Sans SemiBold',sans-serif ;
+        text-decoration: none;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        transition: color 0.3s ease;
+      }
+      .Resposibility a:hover{
+        color: #8d8b8b;
+
+      }
+
+      .Resposibility h3{
+
+        display: block;
+        color: #f5f7f6;
+        font-size: 20px;
+        font-family: 'SoDo Sans SemiBold',sans-serif ;
+        text-decoration: none;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+        cursor: pointer;
+      }
+      .quickLinks{
+        width:200px;
+        margin: 20px auto;
+        text-align: left;
+        color: #f5f7f6;
+        position: relative;
+        top:-380px;
+        left :50px;
+
+      }
+      .quickLinks h3{
+
+        display: block;
+        color: #f5f7f6;
+        font-size: 20px;
+        font-family: 'SoDo Sans SemiBold',sans-serif ;
+        text-decoration: none;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+        cursor: pointer;
+      }
+
+        .quickLinks a{
+
+          display: block;
+          color: #f5f7f6;
+          font-size: 14px;
+          font-family: 'SoDo Sans SemiBold',sans-serif ;
+          text-decoration: none;
+          letter-spacing: 1px;
+          margin-bottom: 10px;
+          transition: color 0.4s ease;
+        } 
+        .quickLinks a:hover{
+          color: #8d8b8b;
+  
+        }
+        .socialMedia{
+          width:200px;
+          margin: 20px auto;
+          text-align: left;
+          color: #f5f7f6;
+          letter-spacing: 1px;
+          position: relative;
+          top:-760px;
+          left :250px; 
+        }
+        .socialMedia h3{
+
+          display: block;
+          color: #f5f7f6;
+          font-size: 22px;
+          font-family: 'SoDo Sans SemiBold',sans-serif ;
+          text-decoration: none;
+          letter-spacing: 1px;
+          margin-bottom: 10px;
+          cursor: pointer;}
+
+          .store{
+            display: grid;          /* Activate grid */
+            grid-template-columns: 1fr;  /* Only one column */
+            gap: 10px;              /* Space between items */
+            width:200px;
+            margin: 20px auto;
+            text-align: left;
+            color: #f5f7f6;
+            letter-spacing: 1px;
+            position: relative;
+            top:-870px;
+            left :410px; 
+          }
+          .footerSecondDivision{
+            padding: 0px;
+            background-color: #0e382c;
+            border-top: 1px solid #fcf9f9;
+            position: relative;
+            top:-600px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            color: #f5f7f6;
+            margin-bottom:-150px;
+          }
+           .row{
+            display:inline;
+            gap: 100px;
+            width:200px;
+            margin: 20px auto;
+            text-align:center;
+            margin-right: 60px;
+            margin-left: 10px;
+            position: relative;
+            top:20px;
+            left:0px;
+           }
+           .row a  {
+            display: inline;
+            padding-right: 10px;
+            padding-left: 10px;
+            flex:7;
+            text-decoration: none;
+            font-family: 'SoDo Sans SemiBold',sans-serif ;
+            text-align:center;
+            font-size:13px;
+            letter-spacing: 1px;
+            margin-right: 0;
+            border-right: 1px solid #f5f7f6;
+            color: #f5f7f6;
+            transition: color 0.4s ease;
+           }
+           .row a:hover{
+            color: #8d8b8b;
+          }
+           .copyRight a{
+            width:200px;
+            display: inline;
+            margin: 20px auto;
+            text-decoration: none;
+            text-align:auto;
+            color: #f5f7f6;
+            font-family: 'SoDo Sans SemiBold',sans-serif ;
+            font-size:x-small;
+            letter-spacing: 1px;
+            position: relative;
+            top:1px;
+            left:640px;
+            transition: color 0.4s ease;   }
+
+            .copyRight a:hover{
+              color: #8d8b8b;}
